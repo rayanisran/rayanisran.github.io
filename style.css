@@ -1,0 +1,355 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url("images/background.png");
+  background-attachment: fixed;
+  height: 100%;
+  background-size: cover;
+  background-position: right bottom;
+}
+
+.emote {
+  display: none;
+  position: absolute;
+  top: 60%;
+  /* Adjust the position as needed */
+  left: 64%;
+  /* Replace 'emote.png' with the path to your emote image */
+  width: 40px;
+  /* Adjust the width and height as needed */
+  height: 40px;
+  background-size: cover;
+  z-index: 1;
+  /* Ensure the emote appears on top of the text */
+}
+
+/* When you hover over the text, show the emote */
+.emote-text:hover ~ .emote {
+  display: block;
+}
+
+.cold-text {
+  /* Change this to your desired initial font color */
+  transition: color 0.5s ease;
+  /* Add a transition effect for a smooth color change */
+}
+
+.cold-text:hover {
+  color: #00bfff;
+  /* Icy blue color */
+}
+
+#profile_photo {
+  float: left;
+}
+
+#about {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.citation {
+  border: 1px solid rgba(128, 128, 128, 0.65);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(240, 240, 240, 0.8);
+  max-width: 1200px;
+  margin: 0;
+}
+
+.citation p {
+  margin: 0;
+  /* Add this line to remove margin */
+  padding: 0;
+  /* Add this line to remove padding */
+}
+
+/* .citation a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+} */
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.about,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+#handwriting_image {
+  height: 50px;
+  opacity: 0.65;
+  padding-left: 20px;
+}
+
+.navbar {
+  margin-bottom: 5px;
+
+}
+
+.navbar-toggle {
+  margin-right: 0px !important;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar-default a {
+  color: #3595B5 !important;
+  border-radius: 3px;
+  padding: 10px 10px !important;
+  margin: 5px 5px !important;
+}
+
+.navbar-default a:hover {
+  background-color: #DAF0F7 !important;
+}
+
+ul.nav {
+  margin-right: 10px;
+}
+
+a {
+  color: #3595B5;
+}
+
+h1 {
+  font-family: "Special Elite";
+  font-size: 32px;
+}
+
+h2 {
+  font-family: "Special Elite";
+  font-size: 22px;
+}
+
+p {
+  font-family: "Cabin";
+  font-size: 1.1em;
+}
+
+p.image-caption {
+  font-size: 0.8em;
+}
+
+
+#about_me h1 {
+  margin-top: 0;
+}
+
+.logos-git:hover,
+.logos-ln:hover {
+  transition: transform 0.3s;
+  /* Add smooth transition for transform property */
+}
+
+.logos-git:hover,
+.logos-ln:hover {
+  transform: scale(0.93);
+  /* Decrease image size slightly on hover */
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.77);
+}
+
+.logos {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.logos img {
+  height: 35px;
+  margin: 5px;
+}
+
+.modal_logos {
+  padding: 10px;
+}
+
+.square_logo {
+  border-radius: 4px;
+}
+
+#publications p {
+  padding: 2px;
+}
+
+.section_box {
+  border-radius: 5px;
+  width: 100%;
+  position: relative;
+}
+
+.section_img {
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.section_name {
+  position: relative;
+  height: 50px;
+  bottom: 50px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #B3B3B3;
+}
+
+footer img {
+  height: 50px;
+  background-color: white;
+}
+
+.nav {
+  font-size: 1.2em;
+  font-family: "Cabin", sans-serif;
+}
+
+#my_photo {
+  border-radius: 8px;
+}
+
+.space {
+  height: 30px;
+}
+
+.left-image {
+  width: 100%;
+}
+
+.center-image {
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+.right-image {
+  margin-left: 200px;
+}
+
+#photo_body::after {
+  content: "";
+  background-image: url("images/gradwic_bg.jpg");
+  background-size: cover;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.modal-body {
+  z-index: 1;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+.container-narrow>hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+
+.marketing p+h4 {
+  margin-top: 28px;
+}
+
+.photog_box {
+  height: auto;
+  padding: 1px;
+}
+
+.photog_box_large {
+  height: auto;
+  padding: 0px;
+}
+
+.photog_box img,
+.photog_box_large img {
+  width: 100%;
+}
+
+.row_fix {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.photog_container {
+  padding: 1px;
+}
+
+.wabi_pic {
+  padding-bottom: 3px;
+}
+
+.paper_award {
+  color: #c7a032;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+
+}

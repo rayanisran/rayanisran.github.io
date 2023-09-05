@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link href='https://fonts.googleapis.com/css?family=Cabin|Special+Elite|Ek+Mukta:400,200,300|Covered+By+Your+Grace'
+    rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/js/extra.js?v=1"></script>
+
+  <title>Rayan Isran</title>
+
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="style.css" rel="stylesheet">
+
+</head>
+<div class="device-xs visible-xs"></div>
+<div class="device-sm visible-sm"></div>
+<div class="device-md visible-md"></div>
+<div class="device-lg visible-lg"></div>
+
+<body>
+
+  <div id="main_content" class="container">
+    <div class="header clearfix">
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#navbar-collapse-target" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <img src="images/rayanisran-2.png" id="handwriting_image" width="250" />
+          </div>
+          <div id="navbar-collapse-target" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li role="presentation"><a href="#projects">Projects</a></li>
+              <li role="presentation"><a href="#publications">Publications</a></li>
+              <li role="presentation"><a href="#teaching">Teaching</a></li>
+              <li role="presentation"><a href="#misc">Miscellaneous</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="row about">
+      <div class="col-sm-3">
+        <img id="my_photo-new" src="images/my-photo-new.png" height="340px" />
+      </div>
+      <div id="about_me" class="col-sm-9">
+        <h1>About Me</h1>
+        <p>I am an MSc Student at the <a href="https://srl.mcgill.ca/">Shared Reality Lab</a>, <b>McGill University</b>,
+          advised by <a href="https://www.cim.mcgill.ca/~jer/">Jeremy Cooperstock</a>. My research focuses on improving
+          accessibility of graphical content, particularly charts, through multimodal audio and haptic feedback.
+        </p>
+        <p>I come from a background of Mechatronics. Through my diverse research, I have experience in <b>haptic
+            rendering, robotics, human-computer interaction, data analysis</b>, and
+          <b>software development</b>.
+          Check out some of my projects below!
+        </p>
+
+        <p>I enjoy hiking (especially on <span class="cold-text">cold days!</span>), volleyball, badminton, and
+          <span class="emote-text">speedrunning</span>.
+          <img class="emote" src="images/game-emoji.png"/></p>
+        <p><b>Email: </b><a href="mailto:rayanisran@gmail.com">
+            rayanisran@gmail.com</a></p>
+        <p><b>CV: </b><a href="rayan-isran-cv.pdf">PDF</a></p>
+
+        <div id="main_logos" class="logos">
+          <a href="https://www.linkedin.com/in/rayanisran">
+            <img id="first_logo" src="images/linkedin.png" class="logos-ln" /></a>
+          <a href="https://github.com/rayanisran">
+            <img src="images/github.png" class="logos-git" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="space"></div>
+
+    <div id="projects">
+      <h1>Projects</h1>
+      <div class="section_boxes">
+
+        <div class="row box_row">
+
+          <div class="col-sm-4">
+            <div class="section_box" data-toggle="modal" data-target="#replay_modal">
+              <img class="section_img" src="images/prototyping.png" />
+              <div class="section_name">
+                <p>Interactive Audio-Tactile Prototyping</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="replay_modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Interactive Audio-Tactile Prototyping
+                  </h4>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <img class="left-image" src="images/warheads.png" />
+                      <img class="left-image" src="images/prototyping-charts.png" />
+                      <img class="left-image" src="images/prototype-graphs.png" />
+                    </div>
+                    <div class="col-sm-7 fill-height">
+                      <p>The increasing use of haptic systems necessitates user-friendly software for creating
+                        interactive audio-haptic experiences. If you are an educator teaching the Cold War to blind
+                        students, it may be difficult
+                        to convey a graph such as the one on the left. To provide a potentially immersive user
+                        experience, we present a prototyping tool to easily and rapidly create multimodal audio-haptic
+                        designs on a <a href="https://pad.dotincorp.com/" target="_blank">Dot Pad</a> Braille
+                        display.</p>
+
+                      <p>The tool was created to support three goals:</p>
+
+                      <p>&nbsp;&nbsp;&nbsp;<b>1.</b> Allow designers to control which tactile pins to render, to create
+                        a desired tactile
+                        image.</p>
+                      <p>&nbsp;&nbsp;&nbsp;<b>2.</b> Provide an easy way to deliver targeted audio events upon touch
+                        inputs.</p>
+                      <p>&nbsp;&nbsp;&nbsp;<b>3.</b> Automatically generate a predefined audio-haptic experience for
+                        selected types of graphics.</p>
+
+
+                      <p>A rendering of the multi-line
+                        graph is shown on the left. Users can <b>tap on points</b>
+                        for audio readouts of values, or <b>pan across the plots</b> to listen to a reinforced spatial
+                        representation. We also focused on mappings to allow for simultaneous discrimination of multiple
+                        graphs.
+                      </p>
+
+                      <p>More about the tool coming soon!</p>
+
+                      <h4>Collaborators:</h4>
+                      <p><a href="https://ca.linkedin.com/in/sri-gannavarapu">Sri Gannavarapu</a> and
+                        <a href="https://www.julietteregimbal.ca/">Juliette Regimbal</a>.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="section_box" data-toggle="modal" data-target="#livestream_modal">
+              <img class="section_img" src="images/rendering-charts-2.jpg" />
+              <div class="section_name">
+                <p>Comparing Audio-Haptic Systems for Rendering Charts</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="livestream_modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Comparing Audio-Haptic Systems for Rendering Charts</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <img class="left-image" src="images/multimodal-chart.jpg" />
+                      <div class="audio-container">
+                        <audio controls>
+                          <source src="images/covid.json.wav" type="audio/wav">
+                          Your browser does not support the audio element.
+                        </audio>
+                      </div>
+                      <p class="image-caption">A sonified chart. (best played using headphones with spatial audio
+                        capability)</p>
+
+                      <img class="left-image" src="images/chart_guidance.gif" />
+                    </div>
+                    <div class="col-sm-6 fill-height">
+                      <p>In the past decade, there has been considerable research into the use of audio-tactile graphics
+                        to present information in charts to blind and low-vision (BLV) users, yet comparatively
+                        little into sonifications and force-feedback rendering techniques. As tactile displays are
+                        generally more expensive or require bespoke hardware, recent commercially available
+                        force-feedback
+                        devices such as the Haply 2diy could act as substitutes for BLV users if they are able to
+                        interpret graphical content to a similar level of accuracy. </p>
+
+                      <p>We conducted a study to compare
+                        sonifications alone against sonifications
+                        combined with three distinct haptic conditions: two force-feedback methods, and a refreshable
+                        tactile approach.
+                        We analyze semi-structured interviews to understand user preferences
+                        among the modalities, and then discuss the implications of our results
+                        on future multimodal audio-haptic designs.</p>
+                      <h4>Publications:</h4>
+                      <p>Coming Soon!</p>
+                      </p>
+                      <h4>Collaborators:</h4>
+                      <p><a href="https://ca.linkedin.com/in/sri-gannavarapu">Sri Gannavarapu</a>,
+                        <a href="https://ca.linkedin.com/in/floriangrond">Florian Grond</a>, and
+                        <a href="https://dreamseed87.wixsite.com/yyoo">Yongjae Yoo</a>.
+                      </p>
+
+                      <!-- <img src="images/the-dotpad-graph.jpg" class="right-image" width="220"/> -->
+
+
+                      <br /><br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="section_box" data-toggle="modal" data-target="#webuild_modal">
+              <img class="section_img" src="images/hands-up.jpg" />
+              <div class="section_name">
+                <p>HandsUp: Integrating Real-World Gestures into Digital Meetings</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="webuild_modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">HandsUp: Integrating Real-World Gestures into Digital Meetings (Human-Computer
+                    Interaction, Fall 2020)&nbsp;
+                  </h4>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <img class="left-image" src="images/handsup.png" /><br /><br />
+                      <iframe width="100%" height="200px" src="https://www.youtube.com/embed/dcb19N0Mecc"
+                        frameborder="0" allowfullscreen></iframe>
+                      <p class="image-caption">A quick testing demo: gestures are used to respond to questions
+                        intentionally asked
+                        specifically to use them.
+                      </p>
+                    </div>
+                    <div class="col-sm-6 fill-height">
+                      <p>Popular videoconferencing apps like Zoom make it difficult for listeners to unobtrusively
+                        respond
+                        to a presenter. Zoom has attempted to allow users to signify indicators such as
+                        Raise Hand,
+                        Thumbs Up, and Thumbs Down, but the interface for doing so is hard to find and it is easy to
+                        miss the
+                        responses. Also, the responses do not decay, so unless the host clears all responses or all
+                        users
+                        undo their response after some time, the responses display even after becoming irrelevant!</p>
+
+                      <p>
+                        HandsUp is a tool aimed at improving interactiveness in online classrooms. It contains both a
+                        hardware
+                        and software component. The hardware component consists of a wearable glove with embedded
+                        motions sensors
+                        that can identify basic predefined gestures and relay them to the computer interface.
+                        The software system is a desktop application that overlays a user interface on top of
+                        a videoconferencing window. The hardware and software systems are integrated to provide a
+                        seamless product that can efficiently translate hand gestures into highly visible indicators
+                        during a remote learning session.
+
+                      </p>
+                      <p>Slides can be found <a href="HandsUp-Presentation.pdf">here</a>.</p>
+                      <h4>Collaborators:</h4>
+                      <p><a href="http://linneakirby.com/">Linnea Kirby</a>,
+                        <a href="https://ca.linkedin.com/in/sri-gannavarapu">Sri Gannavarapu</a>.
+                      </p><br /><br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row box_row">
+
+
+          <div class="col-sm-4">
+            <div class="section_box" data-toggle="modal" data-target="#critiquekit_modal">
+              <img class="section_img" src="images/psychophysics-other.png" />
+              <div class="section_name">
+                <p>Evaluating Tactile Acuity on the Forearm</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="critiquekit_modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Evaluating Tactile Acuity on the Forearm
+                  </h4>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <img class="left-image" src="images/vib.gif" />
+                      <img class="left-image" src="images/psychophysics-single.png" />
+                    </div>
+                    <div class="col-sm-7 fill-height">
+                      <p>Perceptual acuity to vibrotactile stimuli is of fundamental
+                        importance to effective use of the haptic channel
+                        for communication. An understanding of the variation in this
+                        acuity across different regions of the body could be important
+                        to designers of wearable devices. Here, we characterized
+                        the influence of both spatiotopic and proximodistal distance on
+                        vibrotactile frequency discrimination performance through two
+                        experiments involving stimuli delivered to the volar forearm.
+                        Although we did not find statistically significant results for either
+                        study, the trends are suggestive of frequency discrimination being
+                        best at greater spatiotopic distance and smaller interstimulus
+                        distance on the sites tested.</p>
+                      <h4>Paper:</h4>
+                      <p>Coming Soon!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="section_box" data-toggle="modal" data-target="#discoveryspace_modal">
+              <img class="section_img" src="images/towards.png" />
+              <div class="section_name">
+                <p>Towards More Effective Data Visualizations with Haptics</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="discoveryspace_modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Towards More Effective Data Visualizations with Haptics</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <img class="left-image" src="images/nav1_mode.gif" width="500" />
+                      <p class="image-caption">In one mode, the user can search a data point to
+                        quickly navigate to it in a dense bubble plot.</p>
+                    </div>
+                    <div class="col-sm-6 fill-height">
+                      <p>Cognitive overload in complex multi-dimensional
+                        data visualization can cause challenges for users to
+                        comprehend, navigate, and determine statistical measures. To
+                        address this problem, we tested the feasibility of integrating
+                        vibrotactile and force-feedback haptics with bubble charts to
+                        test several haptic rendering techniques for visualizing data.
+                        The preliminary results suggest that force-feedback was
+                        effective in quickly navigating to points of interest in the data,
+                        and vibrotactile feedback was effective in representing higher
+                        dimensions and locating statistical measures of data.</p>
+                      <h4>Publications:</h4>
+                      <p><a href="WHC21_0244_FI.pdf">Towards More Effective Data Visualizations with Haptics</a>.
+                        <i>WHC ’21</i> | <a href="https://youtu.be/pvQkVZaunto">Video</a>.
+                      </p>
+                      <h4>Collaborators:</h4>
+                      <p><a href="https://www.cs.ubc.ca/labs/spin/node/445">Kattie Sepehri</a>,
+                        <a href="https://uwaterloo.ca/haptic-experience-lab/people-profiles/ahmed-anwar">Ahmed
+                          Anwar</a>, and
+                        <a href="https://uwaterloo.ca/games-institute/people-profiles/karthik-theivendran">Karthik
+                          Theivendran</a>.
+                      </p><br /><br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="section_box" data-toggle="modal" data-target="#feedback_modal">
+              <img class="section_img" src="images/navi-graph.png"/>
+              <div class="section_name">
+                <p>Haptic Guidance to Navigate Photographs</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="feedback_modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Haptic Guidance to Navigate Photographs&nbsp;
+                  </h4>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <img class="left-image" src="images/dotpad-layers.png" />
+                      <p class="image-caption">Categorizing segments into seperate navigable layers on the
+                        <a href="https://web.archive.org/web/20230410040328/https://pad.dotincorp.com/"
+                          target="_blank">Dot Pad.</a>
+                      </p>
+                      <img class="left-image" src="images/navi-graph-2diy.png" />
+                      <p class="image-caption">The 2diy (top-right) can navigate to the outlined segments and objects
+                        (highlighted by the red and green dots)
+                        sequentially in the graphic, conveying their spatial location.
+                      </p>
+                    </div>
+                    <div class="col-sm-8 fill-height">
+                      <p>Widespread adoption of haptics for accessibility
+                        has been stymied by the high cost and limited availability of the necessary hardware. We intend
+                        to address this
+                        shortcoming through our work on <a href="https://image.a11y.mcgill.ca/">IMAGE, an open-source
+                          web-based project</a> that aims to provide intuitive audio-haptic
+                        translations of graphical web content. Current designs leverage force-feedback and tactile
+                        haptics.
+                      </p>
+                      <p>As part of this project, I participated in brainstorming designs for audio-haptic experiences,
+                        created
+                        prototypes such as the ones on the left, and integrated the <a
+                          href="https://2diy.haply.co/">Haply 2diy</a> force-feedback device
+                        into the extension—using it to implement an end-to-end audio-haptic experience.</p>
+                      <h4>Collaborators:</h4>
+                      <p>
+                        <a href="https://dreamseed87.wixsite.com/yyoo">Yongjae Yoo</a>,
+                        <a href="https://www.idmil.org/people/john-sullivan/">John Sulivan</a>,
+                        <a href="https://ca.linkedin.com/in/sri-gannavarapu">Sri Gannavarapu</a>, and
+                        <a href="https://ca.linkedin.com/in/cyilkuo">Cyan Kuo</a>.
+                      </p>
+                      <p>&nbsp;</p>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row box_row">
+
+            <div class="col-sm-4">
+              <div class="section_box" data-toggle="modal" data-target="#healthcare_modal">
+                <img class="section_img" src="images/buoy-teaser.png" title="Image source: healthsciences.ucsd.edu" />
+                <div class="section_name">
+                  <p>Coastal Ocean Data Buoy</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="healthcare_modal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Coastal Ocean Data Buoy (BE Capstone Project, Fall 2016)</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-5">
+                        <img class="left-image" src="images/buoy-teaser.png" />
+
+                        <iframe width="100%" height="200px" src="images/buoy.mp4" style="margin-top: 10px;"
+                          frameborder="0" allowfullscreen></iframe>
+                        <!-- <img class="left-image" src="images/buoy.mp4" /> -->
+                      </div>
+                      <div class="col-sm-7 fill-height">
+                        <p>We designed and constructed a data buoy for measuring coastal wave-action. The design is
+                          based on a
+                          simple robust structure and mass-market electronics.</p>
+
+
+                        <p>A significant dual-use feature of this design
+                          is that the structure can <em>also</em> be used for wave-energy generation,
+                          due
+                          to the isolated central structure of the shell. The
+                          electronics can be mounted in an easily-modified, rack configuration that can be removed from
+                          the buoy. In a wave-energy generation setup, the electronics rack would be removed and
+                          the central cylinder would become part of a linear-motion type generator.</p>
+
+                        <p>At the moment, the
+                          buoy is
+                          dedicated to wave data collection, with an onboard inertial measurement
+                          unit and a radio-link to send real-time data to an offshore receiving unit. Basic GPS data are
+                          also transmitted. The buoy endurance is limited by the onboard,
+                          rechargeable batteries and is currently set to a maximum of 1.5 hours. Basic shakedown testing
+                          and data-fidelity
+                          checks were performed.</p>
+                        </p>
+                        <p>Read the final report <a href="buoy-report.pdf">here</a>.
+                        </p>
+                        <p>Or check out <a href="FYP-Presentation.pdf">the slides</a> and <a href="BuoyPoster.pdf">the
+                            poster</a>!
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="section_box" data-toggle="modal" data-target="#brdf_modal">
+                <img class="section_img" src="images/asmpad.png" />
+                <div class="section_name">
+                  <p>ASMPad: IDE for Assembly</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="brdf_modal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">ASMPad: IDE for 65c816 Assembly (2011)</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-7">
+                        <img class="left-image" src="images/asmpad.png" />
+                      </div>
+                      <div class="col-sm-5 fill-height">
+                        <p>Finding it difficult to program in 65c816 Assembly with Notepad (and if you're wondering why
+                          I
+                          was interested in this language, it's because I was in the Super Nintendo ROM hacking scene
+                          back
+                          in the day!), I created an
+                          IDE that featured syntax highlighting, autocomplete, a built-in assembler, macros, a
+                          hex-editor,
+                          templates for boilerplate code, and much more!
+
+                        <p>Find the code on <a href="https://github.com/rayanisran/ASMPad">GitHub</a>.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="section_box" data-toggle="modal" data-target="#lis_modal">
+                <img class="section_img" src="images/equalizer.jpg" />
+                <div class="section_name">
+                  <p>5-Band Audio Equalizer</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="lis_modal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">5-Band Audio Equalizer (Fall 2020)</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <img class="left-image" src="images/equalizer.jpg" />
+                      </div>
+                      <div class="col-sm-8 fill-height">
+                        <p>For <a href="https://www.mcgill.ca/study/2023-2024/courses/ecse-512">ECSE 512 (Digital Signal
+                            Processing)</a>,
+                          I designed a 5-band audio equalizer and presented
+                          the MATLAB code and GUI
+                          implementation.</p>
+                        <p>
+                          The equalizer was designed with five cutoff frequencies: a low-pass filter, three band-pass
+                          filters, and a high-pass filter.
+                          Implementation of the algorithm was tested by applying gains of +5 dB and -5 dB to each
+                          frequency band
+                          while keeping others unchanged at zero gain. Graphs that compare the frequency spectrum of the
+                          signal before and after equalization were created. The implementation allows the user to
+                          choose either
+                          music presets or their
+                          own values for the gain of each band.</p>
+                        <p>Check out my final report <a href="IsranRayan_DRRS_Equalizer.pdf">here</a>.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="row box_row">
+
+            <div class="col-sm-4">
+              <div class="section_box" data-toggle="modal" data-target="#pdc_modal">
+                <img class="section_img" src="images/class-tracker.png" />
+                <div class="section_name">
+                  <p>ClassSnap: Reminder for Lectures & Labs</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="pdc_modal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">ClassSnap: Reminder for Lectures & Labs</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-5">
+                        <img class="left-image" src="images/class-tracker.png" />
+                      </div>
+                      <div class="col-sm-7 fill-height">
+                        <p>I found it difficult to keep track of my classes and labs (location and time) during my
+                          undergraduate studies,
+                          so I created an Android application to keep track of my schedule. At the start of each day,
+                          the
+                          application would send an overview of the daily schedule, and deliver a vibration
+                          5 minutes prior to a class. Unfortunately, the user experience wasn't the best, but creating
+                          the tool was at least a valuable learning experience!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="section_box" data-toggle="modal" data-target="#piano_modal">
+                <img class="section_img" src="images/robotic-arm.png" />
+                <div class="section_name">
+                  <p>4 DoF Software-Controlled Robotic Arm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="piano_modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">4 DoF Software-Controlled Robotic Arm</h4>
+                </div>
+                <div id="piano_body" class="modal-body">
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <img class="left-image" src="images/robotic-arm.png" />
+                    </div>
+                    <div class="col-sm-7">
+                      <p>As our final project in undergraduate for ME 4802 (Robotics), <a
+                          href="https://www.linkedin.com/in/hunain-gul-370b5714a/">
+                          Hunain Qazi</a> and I constructed a 4 DoF robotic arm. We used SolidWorks for the
+                        mechanical design, and C#.NET for the programming. An easy to use, custom-developed language was
+                        created
+                        to sequentially send instructions to the servo motors through an Arduino mounted on the robot,
+                        and a PID controller was
+                        implemented for precise control.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="space"></div>
+      <div id="publications">
+        <h1>Publications</h1>
+
+
+        <div class="citation">
+          <p>Rayan Isran. 2023. Designing Audio-Haptic Systems to Render Charts
+            for Blind Individuals. McGill University (Coming Soon!)
+          </p>
+        </div>
+        <br>
+        <div class="citation">
+          <p>R. Isran, K. Sepehri, K. Theivendran and A. Anwar.
+            2021. <a href="https://ieeexplore.ieee.org/document/9517255" target="_blank">Towards More Effective Data
+              Visualization Methods Using Haptics</a>.
+            <i>WHC '21</i>.
+          </p>
+        </div>
+        <div class="space"></div>
+        <div id="teaching">
+          <h1>Teaching</h1>
+          <div class="section_boxes">
+
+            <div class="row box_row">
+
+              <div class="col-sm-4">
+                <div class="section_box" data-toggle="modal" data-target="#cse216_modal">
+                  <img class="section_img" src="images/ecse421.jpg" />
+                  <div class="section_name">
+                    <p>ECSE 421 - Embedded Systems</p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="cse216_modal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">ECSE 421 - Embedded Systems (Winter 2021)</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <img class="left-image" src="images/ecse421.jpg" title="Image by Bill Verplank" />
+                        </div>
+                        <div class="col-sm-7">
+                          <p>I was a Teaching Assistant for <a href="https://www.cim.mcgill.ca/~jer/courses/es/">
+                              ECSE 421 - Embedded Systems</a>, a final-year undergraduate course
+                            that provides with an emphasis on understanding the interaction between hardware, software,
+                            and the physical world. My responsibilities included designing
+                            assignments that involved using the Arduino Starter Kit (covering I/O,
+                            Finite-State Machines, Interrupts, and Discrete Systems), moderating course discussions,
+                            managing course logistics, and preparing a test bank and conducting oral quizzes.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="section_box" data-toggle="modal" data-target="#csc148_modal">
+                  <img class="section_img" src="images/ecse211.jpg" />
+                  <div class="section_name">
+                    <p>ECSE 211 - Design Principles and Methods</p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="csc148_modal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">ESCE 211 - Design Principles and Methods (Winter 2022, Fall 2022)</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <img class="left-image" src="images/ecse211.jpg" />
+                        </div>
+                        <div class="col-sm-7">
+                          <p>I was a teaching assistant for two semesters of <a
+                              href="https://www.mcgill.ca/study/2023-2024/courses/ecse-211">
+                              ESCE 211 - Design Principles and Methods.</a>
+                            This course introduces students to the concept of design specifications,
+                            meeting requirements, teamwork, testing, and resource management,
+                            emphasizing practical skills in designing, and presenting solutions. It includes a hands-on
+                            project component, in which a robot is designed using a Raspberry Pi and the Lego Mindstorm
+                            EV3 kit to perform a specific task.</p>
+                          <p>
+                            As a TA, I supervised students on this project, provided mentoring and technical support,
+                            conducted weekly check-ins, held office hours, graded weekly lab exercises, and
+                            assisted groups with creating effective final presentations and reports.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="space"></div>
+        <div id="misc">
+          <h1>Miscellaneous</h1>
+          <div class="section_boxes">
+
+            <div class="row box_row">
+
+              <div class="col-sm-4">
+                <div class="section_box" data-toggle="modal" data-target="#gradwic_modal">
+                  <img class="section_img" src="b1-sa-19.png" />
+                  <div class="section_name">
+                    <p>GoldenEye 007 & Perfect Dark Speedrunning</p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="gradwic_modal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">GoldenEye 007 & Perfect Dark Speedrunning&nbsp;
+                        <a href="https://rankings.the-elite.net/~Perfect+Ace">
+                          <span class="glyphicon glyphicon-new-window"></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+
+                      <!-- <div class="col-sm-5">
+                          <img class="left-image" src="images/elite-rankings.png" />
+                          <p class="image-caption">
+                            test
+                          </p>
+                        </div> -->
+
+                      <p>I have been professionally <a href="https://rankings.the-elite.net/~Rayan+I.">speedrunning
+                          GoldenEye 007
+                          and Perfect Dark for the Nintendo 64</a> since 2005. I an multiple-time GoldenEye and
+                        Perfect Dark
+                        world champion, current GoldenEye World Champion, and have achieved over 400 world
+                        records across both games. My achievements have been covered in various YouTube videos that
+                        have collectively
+                        been viewed millions of times. Check out selected coverage from YouTube creators below!
+
+                      <p><a href="https://www.youtube.com/watch?v=2eiLH-ox3Eo" target="_blank">The Most Insane
+                          GoldenEye Speedrun I've Ever Seen</a>.<br>
+                        <a href="https://www.youtube.com/watch?v=kwhxGMJ-Mew" target="_blank">Top 3 Best Goldeneye
+                          Speedrunners Ever</a>.<br>
+                        <a href="https://www.youtube.com/watch?v=7db-dRm2KSA" target="_blank">Perfect Dark's
+                          Oldest Record Was Finally Beaten!</a>.<br>
+                        <a href="https://www.youtube.com/watch?v=pJ_XtChg9xw" target="_blank">Speedrunner SWEEPS
+                          Twenty Amazing World Records</a>.<br>
+                        <a href="https://www.youtube.com/watch?v=tfjZWOuQrIQ" target="_blank">This GoldenEye Record
+                          Took 9 YEARS To Beat</a>.
+                      </p>
+                      <div class="photog_container">
+                        <div class="row">
+                          <div class="col-sm-12 photog_box">
+                            <img src="images/setup.png" />
+                          </div>
+                          <!-- <div class="col-sm-3 photog_box">
+                            <img src="images/viz/player-gaps.png" />
+                          </div> -->
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12 photog_box">
+                            <img src="images/gamecam.png" />
+                          </div>
+                          <!-- <div class="col-sm-6 photog_box">
+                          <img src="images/elite-rankings.png" /> -->
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-sm-4">
+                <div class="section_box" data-toggle="modal" data-target="#composition_modal">
+                  <img class="section_img" src="images/smw-hacking.png" />
+                  <div class="section_name">
+                    <p>Super Mario World ROM Hacking (Game Designing)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="composition_modal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Super Mario World ROM Hacking (Game Designing)</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <img class="left-image" src="images/smwc-f.jpg" />
+                        </div>
+                        <div class="col-sm-7">
+                          <p>From 2008 to 2012, I participated in the Super Mario World ROM hacking
+                            community. I designed several custom levels, participated in and won
+                            a level design competition,
+                            wrote tutorials on 65c816 Assembly, developed tools to streamline development,
+                            and created sprites, many of which
+                            are still used in popular ROM hacks today.
+                          </p>
+
+                          <img class="left-image" src="images/sprite-maker-2.jpg" />
+                          <p class="image-caption">A GUI tool for creating sprites, thus abstracting away most of the
+                            low-level assembly code.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="section_box" data-toggle="modal" data-target="#acappella_modal">
+                  <img class="section_img" src="images/p4-watchface.png" />
+                  <div class="section_name">
+                    <p>Persona 4 Watchface</p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="acappella_modal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Persona 4 Themed Watchface</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <img class="center-image" src="images/p4-snow.gif" height="220px">
+                          <iframe width="100%" height="200px" src="images/midnight.mp4" frameborder="0"
+                            allowfullscreen></iframe>
+                        </div>
+                        <div class="col-sm-7">
+                          <p>This is a Persona 4 inspired watchface designed for the Garmin Forerunner 645. The app
+                            features heart rate, steps,
+                            distance, battery, temperature
+                            (feels like as well as actual), humidity, a Persona 4 Heads-Up Display, as well as a background that
+                            changes depending
+                            on the time of day or weather, based on the user's location. The app also features a
+                            special
+                            Dark Hour animation effect
+                            from Persona 3 if you look at the watch a few seconds before midnight strikes!</p>
+
+                          <p>Find the code on <a href="https://github.com/rayanisran/persona4-watchface">GitHub</a>.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="photo_modal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Pennington & Chuck Quizmo</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>Pennington and Chuck Quizmo are Discord bots I created that provide
+                        functionality such as listing birthdays, asking random Jeopardy trivia questions
+                        presenting other fun games, forecasting the weather, looking up various types of data, and
+                        more!</p>
+
+                      <div class="photog_container">
+                        <div class="row">
+                          <div class="col-sm-6 photog_box">
+                            <img src="images/chuck.png" />
+                          </div>
+                          <div class="col-sm-6 photog_box">
+                            <img src="images/pennington.png" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row box_row">
+
+
+              <div class="col-sm-4">
+                <div class="section_box" data-toggle="modal" data-target="#webdesign_modal">
+                  <img class="section_img" src="images/infographics.png" />
+                  <div class="section_name">
+                    <p>Infographics w/ Python</p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="webdesign_modal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Infographics</h4>
+                    </div>
+                    <div class="modal-body">
+                      <!-- <div class="col-sm-7"> -->
+                      <p>I enjoy creating data visualizations and presented on this topic at PyCon Pakistan 2019.
+                        Here are some I've created for <a href="https://rankings.the-elite.net/">the-elite.net gaming
+                          community.</a></p>
+
+                      <div class="photog_container">
+                        <div class="row">
+                          <div class="col-sm-6 photog_box">
+                            <img src="images/viz/longest_standing_unachieved.png" />
+                          </div>
+                          <div class="col-sm-6 photog_box">
+                            <img src="images/viz/player-gaps.png" />
+                          </div>
+                        </div>
+                        <div class="col-sm-6 photog_box">
+                          <img src="images/viz/wr-summary.png" />
+                        </div>
+                        <div class="col-sm-6 photog_box">
+                          <img src="images/viz/untied-tally.png" />
+                        </div>
+
+                        <div class="col-sm-6 photog_box">
+                          <img src="images/viz/unknown.png" />
+                        </div>
+                        <div class="row">
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="section_box" data-toggle="modal" data-target="#photo_modal">
+                  <img class="section_img" src="images/bots.png" />
+                  <div class="section_name">
+                    <p>Pennington & Chuck Quizmo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <footer class="footer">
+            <!-- <a href="http://designlab.ucsd.edu">
+              <img src="images/designlab.png" /></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://cse.ucsd.edu">
+              <img src="images/ucsd_cse.gif" /></a> -->
+          </footer>
+
+        </div> <!-- /container -->
+
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+</body>
+
+</html>
