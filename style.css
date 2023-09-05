@@ -188,6 +188,10 @@ p.image-caption {
   padding: 2px;
 }
 
+.dark-text {
+  color: #111;
+}
+
 .section_box {
   border-radius: 5px;
   width: 100%;
@@ -215,7 +219,7 @@ p.image-caption {
 
 /* Custom page footer */
 .footer {
-  padding-top: 19px;
+  padding-top: 5;
   color: #777;
   border-top: 1px solid #B3B3B3;
 }
