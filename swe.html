@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link href='https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap' rel='stylesheet'>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/js/extra.js?v=1"></script>
+
+  <title>Rayan Isran</title>
+
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #c085ff;
+      /* Light purplish background */
+      font-family: Arial, sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+    }
+
+    .heading {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-size: 2.5em;
+      text-align: left;
+      color: #ffdddd;
+      font-weight: bold;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+    }
+
+    @font-face {
+      font-family: 'CustomFont';
+      src: url('p5hatty-1.ttf') format('truetype');
+      /* Specify the path to your .ttf file */
+    }
+
+    .percentage {
+      font-size: 10em;
+      color: red;
+      display: flex;
+      align-items: baseline;
+    }
+
+    .percentage .value {
+      font-family: 'CustomFont', sans-serif;
+      /* Use custom font for the percentage value */
+    }
+
+    .percentage .symbol {
+      font-size: 0.2em;
+      /* Smaller percentage symbol */
+      margin-left: 0.3em;
+      margin-bottom: 0.12em;
+      /* Adjusted padding to align better */
+    }
+
+    .post-it {
+      width: 150px;
+      height: 150px;
+      padding: 10px;
+      position: relative;
+      display: inline-block;
+      margin: 10px;
+      background: #ffeb3b;
+      /* Default yellowish color */
+      border: 1px solid #dcb66b;
+      border-radius: 5px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: black;
+      font-weight: bold;
+      text-align: center;
+      overflow: hidden;
+      /* Prevent text from overflowing */
+      line-height: 1.2;
+      /* Adjust line-height to fit text */
+      position: relative;
+      animation: moveOutwards 5s infinite alternate;
+      /* Apply animation */
+    }
+
+    .post-it.red {
+      background: #ff6f6f;
+    }
+
+    .post-it.pink {
+      background: #ff99cc;
+    }
+
+    .post-it.yellow {
+      background: #fff176;
+    }
+
+    .post-it::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-width: 0 10px 10px 10px;
+      border-style: solid;
+      border-color: transparent transparent #dcb66b transparent;
+      bottom: -10px;
+      left: 10px;
+    }
+
+    .post-it:hover {
+      transform: rotate(-20deg);
+    }
+
+    @keyframes moveOutwards {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.04);
+    opacity: 0.8;
+  }
+    }
+
+    @font-face {
+      font-family: 'CustomFont';
+      src: url('p5hatty-1.ttf') format('truetype');
+      /* Specify the path to your .ttf file */
+    }
+
+    .last-updated {
+      /* font-style: italic; */
+      color: #2f0202;
+      /* Light grey-ish color */
+      margin-top: 20px;
+      /* Space between percentage and last updated text */
+      /* font-weight: bold; */
+      font-family: 'P5Hatty', sans-serif;
+      /* Use custom font for last updated text */
+      font-size: large;
+    }
+
+    /* Styles for the animation image */
+    .animation-img {
+      width: 50px;
+      /* Adjust size as needed */
+      height: auto;
+      /* Maintain aspect ratio */
+      vertical-align: middle;
+      /* Align with text */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <div class="header-container">
+        <!-- Insert your .webp animation file link here -->
+        <img src="output-onlinegiftools.gif" alt="Animation" class="animation-img">
+        <div class="heading">Likelihood of Rayan going to Sweden in December 2024</div>
+      </div>
+      <div id="percentage" class="percentage">
+        <span id="percentage-value" class="value">0.0</span><span class="symbol">%</span>
+      </div>
+      <div class="last-updated">Last updated: 5 September 2024</div>
+    </div>
+    <div>
+      <div class="post-it red">Mate</div>
+      <div class="post-it pink">where's</div>
+      <div class="post-it yellow">the money?</div>
+    </div>
+  </div>
+  <script>
+    const percentageElem = document.getElementById('percentage-value');
+    const percentageSymbol = document.querySelector('.symbol');
+    let currentPercentage = 0;
+    const targetPercentage = 36.6;
+
+    function updatePercentage() {
+      if (currentPercentage <= targetPercentage) {
+        percentageElem.textContent = currentPercentage.toFixed(1);
+        const red = Math.max(255 - (255 * (currentPercentage / 25)), 0);
+        const green = Math.max(255 * ((currentPercentage - 25) / 40), 0);
+        const color = `rgb(${red}, ${green}, 0)`;
+        percentageElem.style.color = color;
+        percentageSymbol.style.color = color;
+        currentPercentage += 0.1;
+        requestAnimationFrame(updatePercentage);
+      } else {
+        percentageElem.textContent = targetPercentage.toFixed(1);
+        percentageSymbol.style.color = percentageElem.style.color; // Maintain final color
+      }
+    }
+
+    requestAnimationFrame(updatePercentage);
+  </script>
+</body>
+
+</html>
